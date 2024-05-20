@@ -1,0 +1,103 @@
+.signup{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+   }
+.signup-form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding:30px;
+    align-items: center;
+    border: 4px solid black;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 30px auto;
+    animation: borderAnimation 4s infinite alternate;
+
+}
+@keyframes borderAnimation {
+    0% { border-color: rgb(236, 111, 111); }
+    25% { border-color: rgb(242, 244, 101); }
+    50% { border-color: rgb(140, 231, 61); }
+    75% { border-color: rgb(60, 202, 150); }
+    100% { border-color: rgb(234, 147, 224); }
+  }
+  
+/* .signup-form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+    width: max-content;
+} */
+.signup input{
+    /* width: 100%; */
+    text-indent: 10px;
+    padding: 4px;
+}
+.create{
+    padding:10px;
+    /* background-color: green; */
+    background-color: #FBFFDC;
+    color: blue;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+    width: fit-content;
+}
+.sub-heading{
+    color: blue;
+}
+.signup-form input{
+    width: 90%;
+    text-indent: 10px;
+    padding: 14px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color:white;
+    /* border: 1px solid white; */
+    /* border-radius: 10px; */
+    cursor: grab;
+    font-size: 18px;
+    text-indent: 10px;
+}
+.signup-form input:hover{
+    scale:10px;
+    box-shadow: 0 0 10px rgb(0,0,3);
+    border: 1px solid rgb(19, 19, 153);
+}
+.signup-form input::placeholder{
+    color: white;
+}
+.popup {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 50px 120px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 6, 0, 0.2);
+    z-index: 9999; /* Ensure it appears on top of other content */
+    row-gap: 20px;
+}
+.popup button {
+    padding: 15px; 
+    background-color: rgb(139, 145, 145);
+    background-color: animate 0.3s ease-in; /* Animates the background color change */
+    color: #fff; /* Sets the text color to white */
+    border: none; /* Removes the border */
+    border-radius: 5px; /* Rounds the corners of the button */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    outline: none; /* Removes the default focus outline */
+}
+
+.popup button:hover {
+    background-color: #79E0EE; /* Changes the background color on hover */
+}

@@ -1,0 +1,192 @@
+.main-pro {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.profile-page {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.pro-main {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.pro-main .navbar {
+  position: relative;
+  left: 0;
+  height: 200px;
+}
+
+.sub-navbar {
+  border: 1px solid blueviolet;
+  width: fit-content;
+  height: 100%;
+}
+
+.login-message {
+  text-align: center;
+  border: 1px solid black;
+  margin: 90px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.profile {
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  column-gap: 40px;
+  height: 220px;
+  align-items: center;
+  padding: 20px;
+  /* background-color: rgb(116, 232, 228); */
+}
+
+.profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 6px solid #ded2d2;
+  object-fit: contain;
+}
+
+.profile .round {
+  position: absolute;
+  /* background: #00B4FF; */
+  width: 32px;
+  height: 32px;
+  line-height: 33px;
+  overflow: hidden;
+  border-radius: 50%;
+  text-align: center;
+  transform: translate(-530%, 78%);
+}
+
+.profile .round input[type='file'] {
+  position: absolute;
+  transform: scale(2);
+  opacity: 0;
+  cursor: pointer;
+}
+
+.des {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 4%;
+  /* padding-left: 90px; */
+}
+
+.des .name h2 {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+}
+
+.des .owner,
+.des .user {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.des h4 {
+  font-size: 20px;
+}
+
+.blink {
+  animation: blink-animation 1.5s infinite alternate;
+  background-color: yellow;
+}
+
+.description {
+  display: table;
+  width: 100%;
+}
+
+.description > div {
+  display: table-row;
+}
+
+.description > div > p,
+.description > div > a {
+  display: table-cell;
+  padding: 10px;
+  /* border: 1px solid #ccc; */
+}
+
+.description > div > p:first-child {
+  font-weight: bold;
+}
+
+.pro-main .description .owner-prd,
+.description .buyer-prd,
+.description .add-prd {
+  border-bottom: none;
+}
+
+.pro-main .description a {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pro-main .description a:hover {
+  background-color: #0056b3;
+}
+
+@keyframes blink-animation {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .name {
+    margin-top: 10px;
+  }
+
+  .main-pro {
+    display: flex;
+  }
+  .profile{
+    display:flex;
+flex-direction: column;
+  }
+ 
+  body{
+    font-size: 15px;
+  }
+}
+@media only  screen  and (max-width:440px){
+   .name{
+    width: 120px;
+  }
+  .profile{
+    padding: 40px;
+  }
+  .description{justify-content: center;
+    display: table;
+    width: auto;
+  }
+}

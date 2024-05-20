@@ -1,0 +1,29 @@
+.ProfileNavBar{
+    z-index: 100;
+    position: absolute;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column  ;
+    padding: 20px;
+    width: fit-content;
+    height: 100vh;
+    background-color: rgb(116, 232, 228);
+}
+.navbar{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    row-gap: 20px; 
+}
+
+.navbar>*{
+    float: left;
+}
+.navbar a{ 
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: black;
+}

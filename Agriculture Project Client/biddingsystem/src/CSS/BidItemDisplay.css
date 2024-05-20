@@ -1,0 +1,64 @@
+.biditemdisplay{
+  align-content: center;
+}
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    grid-gap: 20px;
+    margin: 20px;
+  }
+  
+  .single {
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .single:hover {
+    transform: scale(1.05);
+  }
+  
+  img{
+    height: 150px;
+    width: 150px;
+    /* border: 1px solid red; */
+  }
+  .details {
+    padding: 0 10px 10px ;
+  }
+  
+  .name {
+    margin-bottom: 5px;
+  }
+  
+  .sub{
+    display: flex;
+    justify-content: space-around;
+  }
+  .sub h3 {
+    margin: 0;
+  }
+  
+  .button{
+    display: flex;
+    column-gap: 16px;
+  }
+  .makeuseit,.editproduct,.displayUser {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  .makeuseit{
+    flex-grow: 1;
+  }
+  .makeuseit:hover {
+    background-color: #45a049;
+  }

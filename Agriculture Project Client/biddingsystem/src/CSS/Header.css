@@ -1,0 +1,30 @@
+.header{
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.h1{
+    color: blue;
+}
+.entry {
+    padding-right: 5%;
+    text-decoration: none;
+}
+.login-register{
+    text-decoration: none;
+    cursor: grab;
+}
+.pro-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background: url('../images/avatar.png');
+    background-size: contain;
+}
+.login{
+    position:absolute;
+    z-index: 1;
+}

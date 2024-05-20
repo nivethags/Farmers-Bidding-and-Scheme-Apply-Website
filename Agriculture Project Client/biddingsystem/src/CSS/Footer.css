@@ -1,0 +1,23 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(54, 50, 50);
+    color: whitesmoke;
+    padding: 20px;
+}
+.foot-heading{
+    font-size: 25px;
+}
+.link{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: bolder;
+
+}
+.links{
+    justify-content: flex-start;
+    color: white;
+    text-decoration: none;
+}

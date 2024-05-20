@@ -1,0 +1,36 @@
+.Search-container{
+    display:flex;
+    flex-direction: column;
+    /* row-gap: 90px; */
+    align-items: center;
+    justify-content: center;
+    position: relative;  
+}
+.search-icon{
+    width: 40px;
+    height: 20px;
+    /* border: 1px solid black; */
+}
+.Search-container input{
+    outline: none;
+    background-color:transparent ;
+    border: none;
+    width: 180px;
+}
+.search-box{
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    background-color: white;
+    border: 1px solid aqua;
+}
+
+.results{
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    display: flex;
+}

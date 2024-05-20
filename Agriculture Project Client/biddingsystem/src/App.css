@@ -1,0 +1,26 @@
+.App {
+  text-align: center;
+  box-sizing: border-box;
+}
+
+a{
+  color: black;
+  list-style: none;
+  text-decoration:none;
+}
+/* a:active{
+  border-bottom: 2px solid red;
+}  */
+/* .App{
+  height: 100vh;
+} */
+
+body::-webkit-scrollbar {
+  display: none;
+}
+*{
+  scrollbar-width: none;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}

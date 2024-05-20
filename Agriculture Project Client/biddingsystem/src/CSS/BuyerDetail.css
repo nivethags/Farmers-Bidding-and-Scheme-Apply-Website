@@ -1,0 +1,38 @@
+.buyer-container{
+    margin: 50px;
+    padding: 20px;
+    border:1px solid gray;
+    border-radius: 10px;
+    background-color:#f9f9f9;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    
+}
+.buyer-table  tbody{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10%;
+}
+
+.buyer-table th,
+.buyer-table td {
+    border: 1px solid #dddddd; /* Add a solid border around each table cell */
+    padding: 8px;
+    text-align: left;
+}
+.buyer-container .buyer-table tbody .buyer-row  a{
+    border-bottom: 1px solid blue;
+    cursor: grab;
+
+}
+span{
+    display: flex;
+    column-gap: 40px;
+    justify-content: center;
+}
+.cus-icon{
+    width:20px;
+    height:20px;
+    /* padding:20px; */
+}

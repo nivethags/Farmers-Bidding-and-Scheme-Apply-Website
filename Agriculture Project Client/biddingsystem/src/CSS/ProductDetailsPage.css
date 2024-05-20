@@ -1,0 +1,91 @@
+.details{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.details .product-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    row-gap: 30px;
+    /* align-items: center;
+    padding: 20px; */
+}
+.product-detail .description{
+    display:inline-flex;
+    /* justify-content: space-evenly; */
+    column-gap: 40px;
+    justify-content: center;
+}
+
+.img-dis{
+    width: 150px;
+    height: 150px;
+    border: 1px solid rgb(44, 43, 43);
+}
+.detail{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.p-d{
+    font-size:15px;
+    font-weight: bolder;
+    display: flex;
+}
+.makecode{
+    padding:10px;
+    border-radius: 10px;
+    /* outline: none; */
+    border: none;
+    border: 1px solid rgb(44,43,43);
+}
+
+.img-dis .product-img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.detail table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+ 
+  /* .detail td {
+    padding-left: 8px;
+  } */
+  
+ .detail .p-d {
+    font-weight: bold;
+  }
+  
+  /* Set fixed width for the first column */
+ .detail td:first-child {
+    width: 150px; /* Adjust as needed */
+  }
+  .detail td:last-child{
+    display: flex;
+    font-size: 15px;
+    font-weight: 600;
+    justify-content: center;
+    /* border: 1px solid red; */
+  }
+  
+@media only screen and (max-width: 600px) {
+    .product-detail .description{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+
+    body{
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .details{
+        row-gap: 20px;
+    }
+  }

@@ -1,0 +1,11 @@
+.main-navbar{
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(156, 235, 235);
+    column-gap: 20px;
+    padding-right: 2%;
+    padding: 15px;
+}
+/* .navopt{
+    color: black; 
+} */

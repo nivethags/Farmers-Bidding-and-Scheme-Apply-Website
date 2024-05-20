@@ -1,0 +1,82 @@
+.edit-profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    width: fit-content;
+    margin: auto;
+}
+.edit-heading{
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+/* input{
+    width:100%;
+} */
+
+label{
+    display: block;
+    text-align: center;
+}
+.edit-data{
+    margin: auto;
+    padding: 0px 20px;
+}
+.username , .password , .mail{
+    display: flex;
+    column-gap: 80px;
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+}
+.firstname , .lastname ,.main , .confirmation{
+     display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+
+.profile-img {
+    position: relative;
+    /* display: flex;
+    flex-grow: 1;
+    justify-content: center ;
+    gap: 10px;
+    border: 1px dashed violet;
+    align-items: center;
+    padding: 20px;  */
+    display: flex;
+
+    }
+
+  .profile-img img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 6px solid #ded2d2;
+    object-fit: contain;
+  }
+  
+  .profile-img .round {
+    position: absolute;
+    background: #00B4FF;
+    width: 32px;
+    height: 32px;
+    line-height: 33px;
+    overflow: hidden;
+    border-radius: 50%;
+    transform: translate(220%,194%);
+    /* text-align: center; */
+    /* border: 1px solid red; */
+  }
+  
+  .profile-img .round input[type='file'] {
+    position: absolute;
+    transform: scale(2);
+    opacity: 0;
+    cursor: pointer;
+    border: 1px solid red;
+  
+  }

@@ -1,0 +1,42 @@
+.scheme-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0%; /* Adjust the gap between input fields */
+    justify-content: center;
+    padding: 2% 20%;
+    column-gap: 10%;
+}
+
+.scheme-form .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.scheme-form label {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+}
+
+.scheme-form input {
+    text-indent: 10px;
+    padding: 14px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: black;
+    border: 1px solid blue;
+    border-radius: 10px;
+    cursor: pointer;
+    /* font-size: 18px; */
+}
+
+.btn {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px; /* Adjust margin as needed */
+}
+
+.btn button {
+    margin: auto; /* Adjust button spacing */
+}
